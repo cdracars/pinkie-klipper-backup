@@ -1,6 +1,5 @@
 [gcode_macro HEATSOAK_PLA]
 gcode:
-    SET_FAN_SPEED FAN=chamber_filter SPEED=0.20
     G28
     G90
     G1 X60 Y60 Z15 F9000
@@ -9,10 +8,11 @@ gcode:
 
 [gcode_macro HEATSOAK_ABS]
 gcode:
-    SET_FAN_SPEED FAN=chamber_filter SPEED=0.20
     G28
     G90
     G1 X60 Y60 Z15 F9000
+    M106 S255
     M104 S240
     M140 S110
     TEMPERATURE_WAIT SENSOR="temperature_sensor chamber" MINIMUM=40
+    M107

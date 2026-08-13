@@ -1,0 +1,11 @@
+[mcu expander]
+serial: /dev/serial/by-id/usb-Klipper_stm32f042x6_03002B001643305645303820-if00
+
+[fan_generic chamber_filter]
+pin: expander:PA0
+max_power: 1.0
+shutdown_speed: 0
+
+[temperature_sensor chamber]
+sensor_type: ATC Semitec 104GT-2
+sensor_pin: expander:PA6

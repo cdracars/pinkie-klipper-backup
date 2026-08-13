@@ -1,6 +1,3 @@
-[include macros/material_presets.cfg]
-[include macros/chamber_presets.cfg]
-[include KlipperExpander.cfg]
 [include macros/leds.cfg]
 [include macros/print.cfg]
 [include macros/filament.cfg]
